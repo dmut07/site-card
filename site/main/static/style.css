@@ -36,7 +36,7 @@
     font-weight: 900;
     font-style: normal;
 }
-.vacantion {
+.vacancy {
     font-family: 'Golos Text', sans-serif;
     font-weight: 500;
 }
@@ -44,4 +44,48 @@
 .bio {
     font-family: 'Golos Text', sans-serif;
     font-weight: 400;
+}
+.name {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 600;
+}
+body {
+    background: #ffffff;
+    background: linear-gradient(180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 80%,
+    rgba(204, 0, 255, 0.3) 100%);
+    min-height: 100vh;
+}
+.index-link {
+    color: #212529;
+    transition: color 0.3s ease;
+}
+.index-link:hover {
+    color: rgba(204, 0, 255, 0.3);
+}
+.connection {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+}
+.skills-link {
+    color: #212529;
+    transition: color 0.3s ease;
+}
+.skills-link:hover {
+    color: rgba(204, 0, 255, 0.3);
+}
+.cases-link {
+    color: #212529;
+    transition: color 0.3s ease;
+}
+.cases-link:hover {
+    color: rgba(204, 0, 255, 0.3);
+}
+.telegram-link {
+    color: #212529;
+    transition: color 0.3s ease;
+}
+.telegram-link:hover {
+    color: rgba(204, 0, 255, 0.3);
 }

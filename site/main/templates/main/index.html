@@ -3,7 +3,7 @@
 {% block title %}Главная{% endblock %}
 
 {% block content %}
-    <div class ="vacantion fs-1 position-absolute top-50 start-0 translate-middle-y ms-5">
+    <div class ="vacancy fs-1 position-absolute top-50 start-0 translate-middle-y ms-5">
         <span style="opacity: 0.7">Python</span> Фуллстек-разработчик
     </div>
 
@@ -12,5 +12,18 @@
         <p class="mb-0" style="margin-left: 7.5rem">3-го курса колледжа и выпускник</p>
         <p class="mb-0" style="margin-left: 6rem">Московской школы программистов</p>
     </div>
+
+    <a href="{% url 'index' %}" class="index-link text-decoration-none">
+        <div class="name fs-1 position-absolute bottom-0 start-0 mb-5 ms-5 d-flex align-items-center">
+            <i class="bi bi-person-circle me-2"></i>Муталиев Данила
+        </div>
+    </a>
+
+    <div class="position-absolute bottom-0 end-0 mb-5 me-5 d-flex gap-5 fs-1">
+        <a href="/cases" class="text-decoration-none cases-link">Кейсы</a>
+        <a href="/skills" class="text-decoration-none skills-link">Навыки</a>
+        <a href="https://t.me/dmut07" class="text-decoration-none telegram-link">Связаться</a>
+    </div>
+
 
 {% endblock %}

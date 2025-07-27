@@ -1,0 +1,13 @@
+<footer>
+    <a href="{% url 'index' %}" class="index-link text-decoration-none">
+        <div class="name fs-1 {% if request.path == '/' %}fw-medium{% endif %} position-absolute bottom-0 start-0 mb-5 ms-5 d-flex align-items-center">
+            <span class="icon fs-1 me-2">􀓤</span>Муталиев Данила
+        </div>
+    </a>
+
+    <div class="fw-normal position-absolute bottom-0 end-0 mb-5 me-5 d-flex gap-5 fs-1">
+        <a href="{% url 'cases' %}" class="text-decoration-none cases-link {% if request.path == '/cases/' %}fw-bold{% endif %}">Кейсы</a>
+        <a href="/skills" class="text-decoration-none skills-link">Навыки</a>
+        <a href="https://t.me/dmut07" class="text-decoration-none telegram-link">Связаться</a>
+    </div>
+</footer>

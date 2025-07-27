@@ -36,37 +36,29 @@
     font-weight: 900;
     font-style: normal;
 }
-.vacancy {
-    font-family: 'Golos Text', sans-serif;
-    font-weight: 500;
+@font-face {
+    font-family: 'SF Pro';
+    src: url("./fonts/SF-Pro.ttf");
 }
-
-.bio {
-    font-family: 'Golos Text', sans-serif;
+.icon {
+    font-family: 'SF Pro', sans-serif;
     font-weight: 400;
-}
-.name {
-    font-family: 'Golos Text', sans-serif;
-    font-weight: 600;
 }
 body {
-    background: #ffffff;
+    font-family: 'Golos Text', sans-serif;
     background: linear-gradient(180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 80%,
-    rgba(204, 0, 255, 0.3) 100%);
+        #FFFFFF 80%,
+        #D7ADFF 100%);
     min-height: 100vh;
 }
-.index-link {
+.index-link .name {
     color: #212529;
-    transition: color 0.3s ease;
-}
-.index-link:hover {
-    color: rgba(204, 0, 255, 0.3);
-}
-.connection {
-    font-family: 'Golos Text', sans-serif;
+    transition: color 0.3s ease, transform 0.3s ease;
     font-weight: 400;
+}
+.index-link:hover .name {
+    color: rgba(204, 0, 255, 0.3);
+    transform: scale(1.03);
 }
 .skills-link {
     color: #212529;
@@ -77,10 +69,12 @@ body {
 }
 .cases-link {
     color: #212529;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-weight: 400;
 }
 .cases-link:hover {
     color: rgba(204, 0, 255, 0.3);
+    transform: scale(1.1);
 }
 .telegram-link {
     color: #212529;

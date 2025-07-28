@@ -1,7 +1,14 @@
 <footer>
     <a href="{% url 'index' %}" class="index-link text-decoration-none">
         <div class="name fs-1 {% if request.path == '/' %}fw-medium{% endif %} position-absolute bottom-0 start-0 mb-5 ms-5 d-flex align-items-center">
-            <span class="icon fs-1 me-2">􀓤</span>Муталиев Данила
+            <span class="icon fs-1 me-2">
+                {% if request.path == '/' %}
+                    􀓤
+                {% else %}
+                    􀓣
+                {% endif %}
+            </span>
+            Муталиев Данила
         </div>
     </a>
 
